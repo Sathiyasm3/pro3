@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sportsques</title>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.AKJoGWcer_5kYWq989nyNQHaD4?w=335&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+    <script type="text/javascript">
+function validate_email(field,alerttxt)
+{
+with (field)
+ {
+ apos=value.indexOf("@");
+ dotpos=value.lastIndexOf(".");
+ if (apos<1||dotpos-apos<2)
+ {alert(alerttxt);return false;}
+ else {return true;}
+ }
+}
+function validate_form(thisform)
+{
+with (thisform)
+ {
+ if (validate_email(email,"Not a valid e-mail address!")==false)
+{email.focus();return false;}
+ }
+}
+</script>
+</head>
+<body style="font-size: large;">
+    <center>
+    <h1><strong>ENTER YOUR THOUGHTS</strong></h1>
+    <img src="https://c4.wallpaperflare.com/wallpaper/971/967/737/sports-images-for-desktop-background-wallpaper-preview.jpg" alt="sports"><br><br><br><br><br>
+    <form  action="submit.htm" onsubmit="return validate_form(this);" method="post">
+        <table style="font-size: 140%"> 
+            <tr>       
+                <td>Name:</td><td><input type="text" placeholder="enter your name"></td>
+            </tr> 
+            <tr>  
+                <td>Age:</td><td><input type="number" placeholder="enter your age"></td>
+            </tr>
+            <tr>
+                <td>Date of birth:</td><td><input type="date" placeholder="enter your DOB"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td><td><input type="radio" name="Gender">Male<input type="radio" name="Gender">Female<input type="radio" name="Gender">Other</td>
+            </tr>
+            <tr>
+                <td>Rate us:</td><td><input type="range" title="how much you love your game"></td>
+            </tr>
+            <tr>
+              <td>Where you watch the game:</td><td><input type="checkbox" title="at home">Home
+              <input type="checkbox" title="at stadium">Stadium
+              </td>
+            </tr>
+        
+            <tr>
+                <td title="what kind of sports you like">SPORTS:</td>
+            <td>
+            <select>
+                <option>---select---</option>
+                <option>---FOOTBALL---</option>              <option>---CRICKET---</option>
+                <option>---BASKETBALL---</option>            <option>---HOCKEY---</option>
+                <option>---VOLLEYBALL---</option>            <option>---TENNIS---</option>
+                <option>---BASEBALL---</option>              <option>---BADMINTON---</option>
+                <option>---KABBADI---</option>                <option>---Other---</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+             <td>Feedback:</td><td><textarea cols="30" rowa="5" placeholder="feedback">feedback</textarea></td>
+            </tr>
+            <tr>
+                <td>Email: </td><td><input type="text" name="email" size="30"></td>
+            </tr>
+            <tr>
+                <td></td><td><input type="submit" value="submit">&nbsp;<input type="reset"></td>
+            </tr>
+        </table>
+
+    </form>
+    <br> <br><br>    <br> <br><br>
+    <a href="https://sathiyaa65.neocities.org/sports/sportsinfo"><img src="https://th.bing.com/th/id/OIP.2oGbHDBAB1xTXvst3gDZFAHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" title="home" alt="home"
+    style="width: 70px;height: 50px;"></a>
+    <h2><i><strong>click above to return to home page</strong></i></h2>
+    </center>
+</body>
+</html>
